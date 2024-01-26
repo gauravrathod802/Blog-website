@@ -5,7 +5,8 @@ import BTC from './../assets/btc.svg';
 const Navbar = () => {
     return (
         <>
-            <Container maxW="1300px" display="flex" padding="4" justifyContent="space-between"
+            <Container
+            as="nav" maxW="1300px" display="flex" padding="4" justifyContent="space-between"
             boxShadow="lg">
                 <Flex align="center">
                     <img src={BTC} width={50} height={50} style={{ marginRight: "15px" }} />
@@ -17,7 +18,7 @@ const Navbar = () => {
                         <InputLeftElement pointerEvents='none'>
                             <SearchIcon color='gray.300' />
                         </InputLeftElement>
-                        <Input w={{}}type='tel' placeholder='Phone number' />
+                        <Input w={{base: "100px", sm: "160px", md:"auto"}}type='tel' placeholder='Phone number' />
                     </InputGroup>
                 </Flex>
             </Container>
