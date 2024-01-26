@@ -6,8 +6,16 @@ const Navbar = () => {
     return (
         <>
             <Container
-            as="nav" maxW="1300px" display="flex" padding="4" justifyContent="space-between"
-            boxShadow="lg">
+            as="nav" 
+            maxW="1600px" 
+            display="flex" 
+            padding="4" justifyContent="space-between"
+            boxShadow="lg"
+            pos="sticky"
+            top="0"
+            zIndex="50"
+            bg="white"
+            >
                 <Flex align="center">
                     <img src={BTC} width={50} height={50} style={{ marginRight: "15px" }} />
                     <Text mr="2">Home</Text>
